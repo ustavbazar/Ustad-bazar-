@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Utsav Bazaar</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="logo">🪔 UTSAV BAZAAR</div><button id="cartBtn">🛒 Cart <b id="count">0</b></button></header>
+<section class="hero"><div><small>FESTIVAL SPECIAL</small><h1>Celebrate. Gift. Shop.</h1><p>Festival products delivered to your doorstep.</p><a href="#shop">Shop Now</a></div></section>
+<main id="shop"><div class="top"><h2>Festival Products</h2><input id="search" placeholder="Search products..."></div><div id="grid" class="grid"></div></main>
+<div id="drawer" class="overlay hide"><aside><div class="head"><h2>Your Cart</h2><button id="close">✕</button></div><div id="items"></div><h3>Total: ₹<span id="total">0</span></h3><button id="checkout" class="primary full">Checkout</button></aside></div>
+<div id="modal" class="overlay hide"><div class="modal"><button id="x">✕</button><h2>Delivery Details</h2><form id="form">
+<input name="name" required placeholder="Full name"><input name="phone" required pattern="[0-9]{10}" placeholder="Mobile number">
+<textarea name="address" required placeholder="Full address"></textarea><input name="city" required placeholder="City"><input name="pin" required pattern="[0-9]{6}" placeholder="Pincode">
+<select name="payment"><option>Cash on Delivery</option><option>Online Payment (add gateway later)</option></select>
+<button class="primary" type="submit">Place Order</button></form><div id="done" class="done hide"></div></div></div>
+<footer>© 2026 Utsav Bazaar</footer><script src="script.js"></script></body></html>
